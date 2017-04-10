@@ -60,6 +60,7 @@ pkg_src_zeromq_ubuntu14: &pkg_src_zeromq_ubuntu14
 - sourceline: 'deb http://download.opensuse.org/repositories/network:/messaging:/zeromq:/git-draft/xUbuntu_14.04/ ./'
   key_url: 'http://download.opensuse.org/repositories/network:/messaging:/zeromq:/git-draft/xUbuntu_14.04/Release.key'
 
+# Note: refer to ubuntu14 if you use dist==Trusty
 addons:
   apt:
     sources: *pkg_src_zeromq_ubuntu12
