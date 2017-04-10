@@ -71,7 +71,7 @@ matrix:
     addons:
       apt:
         sources:
-        <<: *pkg_src_zeromq_ubuntu14
+        - *pkg_src_zeromq_ubuntu14
         packages:
         - *pkg_deps_common
   - env: BUILD_TYPE=default-with-docs
@@ -79,7 +79,7 @@ matrix:
     addons:
       apt:
         sources:
-        <<: *pkg_src_zeromq_ubuntu12
+        - *pkg_src_zeromq_ubuntu12
         packages:
         - *pkg_deps_common
         - asciidoc
